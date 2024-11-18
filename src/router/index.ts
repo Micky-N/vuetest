@@ -9,22 +9,22 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      redirect: '/form_1'
+          redirect: '/form/1'
     },
     {
-      path: '/form_1',
+        path: '/form/1',
       name: 'form_1',
-      component: Form1,
+        component: Form1
     },
     {
-      path: '/form_2',
+        path: '/form/2',
       name: 'form_2',
-      component: Form2,
+        component: Form2
     },
     {
-      path: '/form_3',
+        path: '/form/3',
       name: 'form_3',
-      component: Form3,
+        component: Form3
     },
   ],
 })

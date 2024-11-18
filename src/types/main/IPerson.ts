@@ -8,4 +8,6 @@ export interface IPerson {
     address: IAddress;
     phones: IPhone[];
     email: string;
+    notes?: string[];
+    projects?: string[];
 }

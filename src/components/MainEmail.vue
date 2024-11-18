@@ -1,15 +1,20 @@
 <template>
     <div>
-        <label v-if="label" :for="id">
+        <label v-if="label">
             {{ label }}
         </label>
-        <input :required="required" :disabled="disabled" :id="id" type="number" v-model="model">
+        <input
+            v-model="model"
+            :required="required"
+            :disabled="disabled"
+            type="email"
+        >
     </div>
 </template>
 
 <script lang="ts" setup>
 withDefaults(defineProps<{
-    id: string;
+    keyId: string;
     label?: string | null;
     required?: boolean;
     disabled?: boolean;

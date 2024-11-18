@@ -3,17 +3,17 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="main-container">
-    <header>
-      <RouterLink to="/form_1">Form 1</RouterLink>
-      <RouterLink to="/form_2">Form 2</RouterLink>
-      <RouterLink to="/form_3">Form 3</RouterLink>
-    </header>
+    <div class="main-container">
+        <header>
+            <RouterLink to="/form/1">Form 1</RouterLink>
+            <RouterLink to="/form/2">Form 2</RouterLink>
+            <RouterLink to="/form/3">Form 3</RouterLink>
+        </header>
 
-    <main>
-      <RouterView />
-    </main>
-  </div>
+        <main>
+            <RouterView />
+        </main>
+    </div>
 </template>
 
 <style scoped>

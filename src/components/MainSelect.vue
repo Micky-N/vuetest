@@ -1,8 +1,12 @@
 <template>
     <div>
-        <label v-if="label" :for="id">{{ label }}</label>
-        <select :id="id" v-model="model">
-            <option v-for="option in options" :key="option.value" :value="option.value">
+        <label v-if="label">{{ label }}</label>
+        <select v-model="model">
+            <option
+                v-for="option in options.items"
+                :key="option.value"
+                :value="option.value"
+            >
                 {{ option.label }}
             </option>
         </select>
@@ -13,12 +17,10 @@
 import type { OptionItem } from '@/types/main/Form';
 withDefaults(defineProps<{
     label?: string | null
-    id: string;
-    options: OptionItem[];
+    options: { items: OptionItem[] };
 }>(), {
     label: null
 });
-
 const model = defineModel();
 </script>
 

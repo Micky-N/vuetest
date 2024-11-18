@@ -82,13 +82,13 @@
             {
                 "type": "list",
                 "key": "list",
-                "label": "List",
+                "label": "List 1",
                 "components": [
                     {
                         "type": "input",
                         "key": "input_1",
                         "label": "Input",
-                        "disabled": true,
+                        "disabled": false,
                         "validation": "email"
                     },
                     {
@@ -107,7 +107,7 @@
                     {
                         "type": "list",
                         "key": "list",
-                        "label": "List",
+                        "label": "List 2",
                         "components": [
                             {
                                 "type": "input",
